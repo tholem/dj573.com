@@ -1,26 +1,80 @@
-<!DOCTYPE HTML>
-<html lang="en">	
+
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="shortcut icon" href="favicon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
 		<meta name="robots" content="noindex,nofollow" />
 		
-		<script type="text/javascript">
-			$(document).ready(function(){
-
-			});
-		</script>
-
-		<link rel="stylesheet" type="text/css" href="external_file.css" />
-
-		<style type="text/css" media="all">
-
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+		<!-- <link rel="stylesheet" type="text/css" href="external_file.css" /> -->
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="../../assets/js/html5shiv.js"></script>
+			<script src="../../assets/js/respond.min.js"></script>
+		<![endif]-->
+		
+		<style type="text/css">
+			.main{
+				margin: 64px 0px 0px 0px;
+			}
 		</style>
 	</head>
+	
 	<body>	
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">DJ573</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="main">
+				<h1>Suit & Tie LLC</h1>
+				<p class="lead">Lorem Ipsum. Here I am. Hello World. I eat gummy bears. Don't eat spicy peppers, woo wee.</p>
+			</div>
+	    </div><!-- /.container -->
 
-		Hello World.
 
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.navbar-nav li').on('click',function(){
+					$('.active').removeClass('active');
+					$(this).addClass('active');
+				});
+			});
+		</script>
 	</body>
 </html>
+
 
